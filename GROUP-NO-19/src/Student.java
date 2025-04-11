@@ -1,24 +1,46 @@
- class Student {
-     String name;
-     int age;
-     char gender;
-     long Reg;
+import java.util.Scanner;
 
-     Student() {
-         name = "mtani";
-         Reg = 23;
-         age = 19;
-         gender = 'M';
+public class Student {
+    Scanner Sc=new Scanner(System.in);
+    String name;
+    int age;
+    long reg;
+   String gender;
+
+  //  Student(){
+    //    name="Mtani";
+   //     age=19;
+  //      reg=230141454973l;
+   //     gender='M';
+ //   }
+
+    public void DisplayStudent(){
+        System.out.println("Inter the Student Information");
+
+        System.out.print("Student name : ");
+        name=Sc.next();
+
+        System.out.print("Student age : ");
+          age=Sc.nextInt();
+
+        System.out.print("Registration number : ");
+        reg=Sc.nextLong();
+
+        System.out.print("Student gender : ");
+        gender=Sc.next();
+        System.out.println("___________________________________________");
 
 
-       public void displayStudent(){
-             System.out.println("Name of Student: " + name);
-             System.out.println("Registration Number:" + Reg);
-             System.out.println("Age of student:" + age);
-             System.out.println("Gender of student:" + gender);
 
 
-         }
+        System.out.println("ENTERED STUDENT INFORMATION");
+        System.out.println(" Student name : "+name);
+        System.out.println(" Student name : "+age);
+        System.out.println(" Registration number : "+reg);
+        System.out.println(" Student Gender : "+gender);
+        System.out.println("*********************************************");
 
-     }
 
+
+    }
+}
